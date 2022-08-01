@@ -18,4 +18,15 @@ console.log(copyOfA)
 objectA.d=true
 console.log(objectA)
 
+function a() {
+    console.log('Привет!')
+};
+a()
+a=4
+
+
+
+
+
+
 
