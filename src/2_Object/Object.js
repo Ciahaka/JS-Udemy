@@ -47,6 +47,32 @@ const snorkel={
 }
 console.log(snorkel)
 
+const myNewCity = {
+    city: 'Minsk',      //<--- это свойство объекта
+    popular: true,
+    // country: function () {  //<--- это метод объекта, поскольку его значением является функция
+    //     console.log('Belarus')
+    // }
+    country (){                 //<--- сокращённая запись предыдущего кода, без function, так же явдяется методом
+        console.log('Belarus')
+    }
+}
+myNewCity.country()    //<--- вызов метода всегда происходит при помощи оператора группировки ()
+
+
+const post ={
+    title:'my post',
+    likesQty: 7,
+}
+console.log(post)
+JSON.stringify(post)     //конвертировали объект в строку JSON
+console.log(post)
+
+const postStringify =JSON.stringify(post)
+JSON.parse(postStringify) // обратная конвертация в объект
+
+
+
 
 
 
