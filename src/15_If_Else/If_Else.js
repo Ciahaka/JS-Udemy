@@ -42,28 +42,62 @@ console.log('Ahtung')
 const nastyaAge = 1
 if (nastyaAge >= 18) {
     console.log('Взрослая')
-} else if (nastyaAge >=10 ) {
+} else if (nastyaAge >= 10) {
     console.log('Девчёнка')
 } else {
-    console.log('Детёныш') }
+    console.log('Детёныш')
+}
 console.log('......')
 //последующее решение аналогично предыдущему, но запись иная. Более просто для чтения, но нужно учитывать в последующих условиях, условия предыдущие
 const nastyaAge_2 = 19
-if (nastyaAge_2 >= 18) {console.log('is adult')}
+if (nastyaAge_2 >= 18) {
+    console.log('is adult')
+}
 
-if (nastyaAge_2 >=10 && nastyaAge_2 <18 ) {console.log('is teenager')}
+if (nastyaAge_2 >= 10 && nastyaAge_2 < 18) {
+    console.log('is teenager')
+}
 
-if (nastyaAge_2 < 10 ) {console.log('the child') }
+if (nastyaAge_2 < 10) {
+    console.log('the child')
+}
 
-const sumPositiveNumber =(a,b) => {
-    if (a!=='number' || b!=='number'){
+const sumPositiveNumber = (a, b) => {
+    if (a !== 'number' || b !== 'number') {
         return 'Одно из значений не является числом!'
     }
-    if (a<0 || b<0){
-        return "Одно из значений является отрицательным!"
+    if (a < 0 || b < 0) {
+        return 'Одно из значений является отрицательным!'
     }
-    return a+b
+    return a + b
 }
 
 console.table(sumPositiveNumber('Boom', 10))
 console.table(sumPositiveNumber('Boom', 10))
+
+const month = 7
+switch (month) {
+    case 3:
+        console.log('март')
+        break
+    case 4:
+        console.log('апрель')
+        break
+    case 5:
+        console.log('май')
+        break
+    default:
+        console.log('Не то время года, дурачок!')
+}
+
+const vegetable = 'carrot'
+switch (vegetable){
+    case 'potato':
+        console.log('Овощ, но не тот')
+        break
+    case 'carrot':
+        console.log('Дааа! Вот наш любимый овощ')
+        break
+    default:
+        console.log('Ой, фсё! Не пиши больше! С меня хватит твоих фантазий!')
+}
