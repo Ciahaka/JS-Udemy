@@ -28,3 +28,4 @@ value = -10
 const res = value >= 0 ? value : -value // присваивание выражения с тернарным оператором новой переменной
 console.log(res)
 
+
