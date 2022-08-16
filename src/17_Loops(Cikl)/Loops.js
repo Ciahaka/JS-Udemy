@@ -79,3 +79,4 @@ Object.keys(myNewObject).forEach((key)=>{  //аналогичное решени
 Object.values(myNewObject).forEach((key)=>{ //тот же способ, но уже обращаемся к методу values и пробегая по массиву значений получаем Alex 20, men
     console.log(key,myNewObject[key])
 })
+//конвертация объектов в массив очень полезная спрособность
