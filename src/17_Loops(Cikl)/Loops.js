@@ -76,7 +76,19 @@ Object.keys(myNewObject).forEach((key)=>{  //аналогичное решени
     console.log(key,myNewObject[key])
 })
 
-Object.values(myNewObject).forEach((key)=>{ //тот же способ, но уже обращаемся к методу values и пробегая по массиву значений получаем Alex 20, men
+Object.values(myNewObject).forEach((key)=>{ //тот же способ, но уже обращаемся к методу values и пробегая по массиву
+    // значений получаем Alex 20, men
     console.log(key,myNewObject[key])
 })
 //конвертация объектов в массив очень полезная спрособность
+
+const myNewObject_2 = [true, 10, 'abc',null]    //Пример использования цикла for in для перебора массива. Так делать не
+// нужно, так как для массивов есть свои методы, которые справляются с задачей более эффективно
+for( const key in myNewObject_2) {
+    console.log(myNewObject_2[key])
+}
+
+const myMessage = 'Привет, хлебушек! Прогресс есть?' // цикл for of может иттерировать всё, за исключением объектов, но! в первую очередь идеально подходит для перебора элемнта строк. Так же можно иттерировать и объекты, предварительно трансформировав их в массивы. Но! Для этого подойдёт лучше метод массива forEach
+for (const letter of myMessage) {
+    console.log(letter  )
+}
