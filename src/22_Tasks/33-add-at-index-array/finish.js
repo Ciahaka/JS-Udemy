@@ -9,6 +9,9 @@
 
 const myArray = [1, 2]
 
-myArray[10]= "abc"
+myArray[10] = 'abc'
 console.log(myArray)
 console.log(myArray.length)
+/**
+ данный метод добавит в массив 8 пустых ячеек(элементов)
+ */
