@@ -22,7 +22,8 @@ const arraySortInfo = (inputArray) => {
     if (inputArray.some((el) => typeof el !== 'number')) {
         return 'Некоторые элементы не являются числами'
     }
-    if (inputArray.every((el, index) => index > 0 ? el >= inputArray[index - 1] : true)) {
+    if (inputArray.every((el, index) =>
+        index > 0 ? el >= inputArray[index - 1] : true)) {
         return 'Массив отсортирован по возрастанию'
     }
     if (inputArray.every((el, index) => index > 0 ? el <= inputArray[index - 1] : true)) {
